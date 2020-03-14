@@ -1,4 +1,4 @@
 
 
 
-echo 'this is fake build'
+echo 'this is a fake build'
