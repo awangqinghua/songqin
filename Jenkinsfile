@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'build.bat'
-                mail bcc: '', body: "构建版本成功", cc: '', charset: 'UTF-8', from: 'jcyrss@163.com', mimeType: 'text/plain', replyTo: '', subject: "构建版本成功", to: "867075698@qq.com";
+                mail bcc: '', body: "构建版本成功", cc: '', charset: 'UTF-8', from: 'wq18530929470@163.con', mimeType: 'text/plain', replyTo: '', subject: "构建版本成功", to: "867075698@qq.com";
             }
         }
 
@@ -17,7 +17,7 @@ pipeline {
         stage('QA_Test') {
             steps {
                 echo '执行自动化部署...'
-                bat 'python d:/autodeploy.py'
+                bat 'python ‪D:\BaiduNetdiskDownload\restapi-teach\static\autodeploy'
                 echo '执行自动化测试...'
 
                 dir ('d:\\projects\\sonqqin\\restapi-autotest') {
